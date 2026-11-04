@@ -2,7 +2,7 @@
 
 Our final project site for a computer hardware & repair store.
 
-**Live site:** https://ray-bourne.github.io/CPTR204_Final_Project/
+**Live site:** https://ray-bourne.github.io/CPTR204-Final-Project-Group/
 
 ## Who's doing what
 | Who | Pages | Your guide (in guides/) |
