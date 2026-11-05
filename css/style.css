@@ -1,10 +1,4 @@
-/* =========================================================
-   Circuit-Care Island Tech - OUR OWN CSS (EXTERNAL STYLE SHEET)
-   Linked on every page. Bootstrap does most of the styling;
-   this file only adds our brand colours and fonts.
-   ========================================================= */
-
-/* ===== FONTS ===== */
+/* FONTS */
 body {
   font-family: "Open Sans", sans-serif;
 }
@@ -14,20 +8,20 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
   font-weight: 600;
 }
 
-/* ===== BRAND COLOURS ===== */
+/* BRAND COLOURS */
 .bg-circuit {
-  background-color: #0a2540;   /* Circuit Navy */
+  background-color: #0a2540;   
 }
 
 .text-circuit {
-  color: #00b37e;              /* Circuit Green */
+  color: #00b37e;              
 }
 
 .bg-soft {
-  background-color: #f4f7fa;   /* Soft Grey (section background) */
+  background-color: #f4f7fa;   
 }
 
-/* ===== BUTTON ===== */
+/* BUTTON */
 .btn-circuit {
   background-color: #00b37e;
   border-color: #00b37e;
@@ -35,12 +29,12 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 }
 
 .btn-circuit:hover {
-  background-color: #009468;   /* Darker green on hover */
+  background-color: #009468;   
   border-color: #009468;
   color: #ffffff;
 }
 
-/* ===== NAVBAR ===== */
+/* NAVBAR */
 /* MEDIA QUERY: smaller store name on phones so the menu button fits */
 @media (max-width: 575px) {
   .navbar-brand {
@@ -49,15 +43,15 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 }
 
 .navbar-nav .nav-link {
-  color: #c8d3df;              /* Light grey-blue links */
+  color: #c8d3df;              
 }
 
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
-  color: #00b37e;              /* Green when hovered or on that page */
+  color: #00b37e;              
 }
 
-/* ===== PAGE BANNER (top of every inner page) ===== */
+/* PAGE BANNER */
 .page-banner {
   background-color: #0a2540;
   color: #ffffff;
@@ -74,7 +68,7 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
   color: #c8d3df;
 }
 
-/* ===== CARD HOVER (cards lift up a little) ===== */
+/* CARD HOVER  */
 .card-hover {
   transition: transform 0.3s;
 }
@@ -83,7 +77,7 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
   transform: translateY(-6px);
 }
 
-/* ===== FOOTER ===== */
+/* FOOTER */
 footer {
   border-top: 5px solid #00b37e;
 }

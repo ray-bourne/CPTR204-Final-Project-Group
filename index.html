@@ -7,14 +7,43 @@
 
   <!-- BOOTSTRAP CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- GOOGLE FONTS (Poppins for headings, Open Sans for text) -->
+
+  <!-- GOOGLE FONTS -->
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
-  <!-- OUR OWN CSS (EXTERNAL) -->
+
+  <!-- CSS (EXTERNAL) -->
   <link href="css/style.css" rel="stylesheet">
+
+  <!-- Internal CSS (Home Page Only)-->
+   <style>
+    
+    /* Carousel Pictures */
+    .carousel-item img{
+      height: 450px;
+      object-fit: cover;
+    }
+
+    /* Carousel Caption */
+    .carousel-caption {
+      background-color: rgba(10, 37, 64, 0.75);
+      border-radius: 10px;
+      padding: 20px;
+      bottom: 40px;
+    }
+
+    /*Media Query */
+    @media(max-width: 767px){
+      .carousel-item img {
+        height: 250px;
+      }
+    }
+
+   </style>
+
 </head>
 <body>
 
-  <!-- HEADER + NAVBAR -->
+  <!-- HEADER and NAVBAR -->
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-circuit">
       <div class="container">
@@ -25,6 +54,7 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="mainNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
@@ -34,6 +64,7 @@
             <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
           </ul>
+
           <div class="d-flex gap-2 ms-lg-3 mt-2 mt-lg-0">
             <a class="btn btn-outline-light" href="login.html">Login</a>
             <a class="btn btn-circuit" href="register.html">Register</a>
@@ -45,9 +76,29 @@
 
   <!-- MAIN CONTENT -->
   <main>
-    <!-- ===== RAY-SHAUN BOURNE: BUILD THE HOME PAGE CONTENT HERE =====
-         Follow the "Home" section of the guide (guides folder).
-         Paste each step's code below this comment, in order. -->
+
+    <!-- Carousel -->
+     <div id="carouselHome" class="carousel slide" data-bs-ride="carousel">
+      <!-- Carousel Dots-->
+       <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+       </div>
+
+      <!-- PASTE CAROUSEL SLIDES HERE -->
+      <!-- PASTE CAROUSEL ARROWS HERE -->
+     </div>
+
+    <!-- PASTE WELCOME SECTION HERE -->
+
+    <!-- PASTE WHY CHOOSE US HERE -->
+
+    <!-- PASTE POPULAR SERVICES HERE -->
+
+    <!-- PASTE CALL TO ACTION HERE -->
+
+
+    
   </main>
 
   <!-- FOOTER -->
@@ -60,6 +111,7 @@
           <p class="footer-text">Computer hardware sales and repairs you can trust, proudly serving St. Elizabeth and all of Jamaica.</p>
           <p class="footer-text mb-0">Main Street, Santa Cruz, St. Elizabeth<br>(876) 555-0142<br>hello@circuitcareisland.com</p>
         </div>
+
         <!-- FOOTER: QUICK LINKS -->
         <div class="col-6 col-md-2">
           <h2 class="h5">Quick Links</h2>
@@ -72,6 +124,7 @@
             <li><a class="footer-link" href="contact.html">Contact Us</a></li>
           </ul>
         </div>
+
         <!-- FOOTER: FOLLOW US (EXTERNAL LINKS - OPEN IN A NEW TAB) -->
         <div class="col-6 col-md-3">
           <h2 class="h5">Follow Us</h2>
@@ -81,6 +134,7 @@
             <li><a class="footer-link" href="https://www.youtube.com" target="_blank" rel="noopener">YouTube</a></li>
           </ul>
         </div>
+
         <!-- FOOTER: BRANDS WE TRUST (EXTERNAL LINKS - OPEN IN A NEW TAB) -->
         <div class="col-md-3">
           <h2 class="h5">Brands We Trust</h2>
