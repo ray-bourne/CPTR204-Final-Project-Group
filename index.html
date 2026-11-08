@@ -79,15 +79,64 @@
 
     <!-- Carousel -->
      <div id="carouselHome" class="carousel slide" data-bs-ride="carousel">
+
       <!-- Carousel Dots-->
        <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="0" class="active"
         aria-current="true" aria-label="Slide 1"></button>
+
+        <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="1" 
+        aria-label="Slide 2"></button>
+
+        <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="2" 
+        aria-label="Slide 3"></button>
+       </div>
+       
+      <!-- Carousel Slides-->
+       <div class="carousel-inner">
+
+        <!--Slide 1-->
+        <div class="carousel-item active">
+         <img src="images/slide1.jpg" class="d-block w-100" alt="Technician reparing a laptop">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Expert Computer Repairs</h2>
+          <p>Laptops, desktops and gaming PCs fixed right here in Santa Cruz</p>
+          <a href="services.html" class="btn btn-circuit">View Our Services</a>
+        </div>
        </div>
 
-      <!-- PASTE CAROUSEL SLIDES HERE -->
-      <!-- PASTE CAROUSEL ARROWS HERE -->
-     </div>
+          <!--Slide 2-->
+       <div class="carousel-item">
+        <img src="images/slide2.jpg" class="d-block w-100" alt="Computer parts on a workbench">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Quality Parts &amp; Upgrades</h2>
+          <p>SSDs, RAM, graphics cards and more, in stock and ready to install</p>
+          <a href="parts.html" class="btn btn-circuit">Shop Parts</a>
+        </div>
+       </div>
+
+           <!--Slide 3-->
+       <div class="carousel-item">
+        <img src="images/slide3.jpg" class="d-block w-100" alt="Customer booking a repair online">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Book Your Repairs Online</h2>
+          <p>Create a free account and track your repair from start to finish</p>
+          <a href="register.html" class="btn btn-circuit">Create an Account</a>
+        </div>
+       </div>
+      </div>
+
+
+      <!--Carousel Arrows-->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselHome" data-bs-slide-to="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselHome" data-bs-slide-to="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
 
     <!-- PASTE WELCOME SECTION HERE -->
 
