@@ -64,7 +64,45 @@
      </section>
 
      
-    <!-- PASTE LOGIN CARD HERE -->
+    <!-- Login Form -->
+     <section class="py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-7 col-lg-5">
+            <div class="card shadow">
+              <div class="card-body p-4">
+                <h2 class="h4 text-center mb-4">Log in to Your Account</h2>
+                
+                <!-- Message Box (Javascript places error message)-->
+                 <div id="loginMessage"></div>
+
+                 <!--Login Form -->
+                 <form id="loginForm">
+                  <div class="mb-3">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="username" placeholder="Enter your username">
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                  </div>
+
+                  <div class="form-check mb-3">
+                    <input type="checkbox" class="form-check-input" id="rememberMe">
+                    <label for="rememberMe" class="form-check-label">Remember me</label>
+                  </div>
+                  
+                  <button type="submit" class="btn btn-circuit w-100">Log in</button>
+                 </form>
+                 <p class="text-center mt-3 mb-0">Don't have an account?<a href="register.html">
+                  Register here</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
 
 
   </main>
