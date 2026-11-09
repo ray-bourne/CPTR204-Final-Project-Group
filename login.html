@@ -7,14 +7,16 @@
 
   <!-- BOOTSTRAP CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- GOOGLE FONTS (Poppins for headings, Open Sans for text) -->
+
+  <!-- GOOGLE FONTS -->
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
-  <!-- OUR OWN CSS (EXTERNAL) -->
+
+  <!-- CSS (EXTERNAL) -->
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 
-  <!-- HEADER + NAVBAR -->
+    <!-- HEADER and NAVBAR -->
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-circuit">
       <div class="container">
@@ -25,6 +27,7 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="mainNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
@@ -34,6 +37,7 @@
             <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
           </ul>
+
           <div class="d-flex gap-2 ms-lg-3 mt-2 mt-lg-0">
             <a class="btn btn-outline-light" href="login.html">Login</a>
             <a class="btn btn-circuit" href="register.html">Register</a>
@@ -45,21 +49,38 @@
 
   <!-- MAIN CONTENT -->
   <main>
-    <!-- ===== RAY-SHAUN BOURNE: BUILD THE LOGIN PAGE CONTENT HERE =====
-         Follow the "Login" section of the guide (guides folder).
-         Paste each step's code below this comment, in order. -->
+    <!-- Page Banner and Breadcrumb -->
+     <section class="page-banner">
+      <div class="container">
+        <h1>Customer Login</h1>
+        <p class="lead mb-3">Log in to view our services and track your repairs.</p>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Login</li>
+          </ol>
+        </nav>
+      </div>
+     </section>
+
+     
+    <!-- PASTE LOGIN CARD HERE -->
+
+
   </main>
 
   <!-- FOOTER -->
   <footer class="bg-circuit text-white pt-5 pb-3">
     <div class="container">
       <div class="row g-4">
+
         <!-- FOOTER: ABOUT THE STORE -->
         <div class="col-md-4">
           <h2 class="h5 text-circuit">Circuit-Care Island Tech</h2>
           <p class="footer-text">Computer hardware sales and repairs you can trust, proudly serving St. Elizabeth and all of Jamaica.</p>
           <p class="footer-text mb-0">Main Street, Santa Cruz, St. Elizabeth<br>(876) 555-0142<br>hello@circuitcareisland.com</p>
         </div>
+
         <!-- FOOTER: QUICK LINKS -->
         <div class="col-6 col-md-2">
           <h2 class="h5">Quick Links</h2>
@@ -72,6 +93,7 @@
             <li><a class="footer-link" href="contact.html">Contact Us</a></li>
           </ul>
         </div>
+
         <!-- FOOTER: FOLLOW US (EXTERNAL LINKS - OPEN IN A NEW TAB) -->
         <div class="col-6 col-md-3">
           <h2 class="h5">Follow Us</h2>
@@ -81,6 +103,7 @@
             <li><a class="footer-link" href="https://www.youtube.com" target="_blank" rel="noopener">YouTube</a></li>
           </ul>
         </div>
+
         <!-- FOOTER: BRANDS WE TRUST (EXTERNAL LINKS - OPEN IN A NEW TAB) -->
         <div class="col-md-3">
           <h2 class="h5">Brands We Trust</h2>
@@ -96,8 +119,9 @@
     </div>
   </footer>
 
-  <!-- BOOTSTRAP JAVASCRIPT (needed for the navbar menu, carousel and accordion) -->
+  <!-- Bootstrap JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  
   <!-- OUR JAVASCRIPT FOR THIS PAGE -->
   <script src="js/login.js"></script>
 </body>
