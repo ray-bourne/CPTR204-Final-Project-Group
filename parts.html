@@ -50,9 +50,134 @@
     </nav>
   </header>
 
-  <!-- MAIN CONTENT -->
+  <!-- Main Content -->
   <main>
-  
+    <!-- Page Banner and Breadcrumb -->
+    <section class="page-banner">
+      <div class="container">
+        <h1>Parts Shop</h1>
+        <p class="lead mb-3">Quality computer hardware, in stock in Santa Cruz.</p>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="services.html">Services</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Parts Shop</li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+
+
+    <!-- Cart Bar -->
+    <section class="pt-5">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center border rounded p-3 bg-soft">
+          <h2 class="h5 mb-0">Hardware for Sale</h2>
+          <p class="mb-0">Items in cart: <span id="cartCount" class="badge text-bg-dark fs-6">0</span></p>
+        </div>
+
+        <!--Message Box (added to cart - Javascript)-->
+
+        <div id="cartMessage"></div>
+      </div>
+    </section>
+
+    <!-- Product Cards -->
+    <section class="py-4">
+      <div class="container">
+        <div class="row g-4">
+
+          <!-- Product 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm card-hover">
+              <img src="images/part-ssd.jpg" class="card-img-top" alt="Kingston 1TB NVMe SSD">
+              <div class="card-body">
+                <span class="badge text-bg-success mb-2">In Stock</span>
+                <h3 class="h5 card-title">Kingston 1TB NVMe SSD</h3>
+                <p class="card-text">Up to 10x faster than a hard drive. Great for laptops and desktops.</p>
+                <p class="h5 text-circuit">$11,500</p>
+                <button type="button" class="btn btn-circuit" onclick="addToCart('Kingston 1TB NVMe SSD')">Add to
+                  Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm card-hover">
+              <img src="images/part-ram.jpg" class="card-img-top" alt="Corsair 16GB DDR4 RAM">
+              <div class="card-body">
+                <span class="badge text-bg-success mb-2">In Stock</span>
+                <h3 class="h5 card-title">Corsair 16GB DDR4 RAM</h3>
+                <p class="card-text">2 x 8GB kit, 3200MHz. Run more apps and games at the same time.</p>
+                <p class="h5 text-circuit">$7,800</p>
+                <button type="button" class="btn btn-circuit" onclick="addToCart('Corsair 16GB DDR4 RAM')">Add to
+                  Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm card-hover">
+              <img src="images/part-gpu.jpg" class="card-img-top" alt="NVIDIA GeForce RTX 4060 graphics card">
+              <div class="card-body">
+                <span class="badge text-bg-warning mb-2">Only 2 Left</span>
+                <h3 class="h5 card-title">GeForce RTX 4060 8GB</h3>
+                <p class="card-text">Smooth 1080p gaming and fast video editing.</p>
+                <p class="h5 text-circuit">$52,000</p>
+                <button type="button" class="btn btn-circuit" onclick="addToCart('GeForce RTX 4060 8GB')">Add to
+                  Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm card-hover">
+              <img src="images/part-psu.jpg" class="card-img-top" alt="650W power supply">
+              <div class="card-body">
+                <span class="badge text-bg-success mb-2">In Stock</span>
+                <h3 class="h5 card-title">650W 80+ Gold Power Supply</h3>
+                <p class="card-text">Reliable, efficient power for gaming PCs and workstations.</p>
+                <p class="h5 text-circuit">$14,500</p>
+                <button type="button" class="btn btn-circuit" onclick="addToCart('650W 80+ Gold Power Supply')">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 5 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm card-hover">
+              <img src="images/part-charger.jpg" class="card-img-top" alt="Universal laptop charger">
+              <div class="card-body">
+                <span class="badge text-bg-success mb-2">In Stock</span>
+                <h3 class="h5 card-title">Universal Laptop Charger</h3>
+                <p class="card-text">90W charger with 8 tips. Works with most laptop brands.</p>
+                <p class="h5 text-circuit">$4,500</p>
+                <button type="button" class="btn btn-circuit" onclick="addToCart('Universal Laptop Charger')">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 6 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm card-hover">
+              <img src="images/part-keyboard.jpg" class="card-img-top" alt="Wireless keyboard and mouse">
+              <div class="card-body">
+                <span class="badge text-bg-success mb-2">In Stock</span>
+                <h3 class="h5 card-title">Wireless Keyboard &amp; Mouse</h3>
+                <p class="card-text">Quiet keys, long battery life and one USB receiver for both.</p>
+                <p class="h5 text-circuit">$6,200</p>
+                <button type="button" class="btn btn-circuit" onclick="addToCart('Wireless Keyboard and Mouse')">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          </div>
+        </div>
+    </section>
+
 
   </main>
 
