@@ -60,7 +60,92 @@
         </nav>
       </div>
      </section>
-    <!-- Registration Card-->
+
+    <!-- Registration Form -->
+     <section class="py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="card shadow">
+              <div class="card-body p-4">
+                <h2 class="h4 text-center mb-4">Online Registration Form</h2>
+
+                <!-- Message Box (Javascript ) -->
+                 <div id="registerMessage"></div>
+
+                 <form id="registerForm">
+                  <!-- Personal Details -->
+                   <fieldset class="mb-4">
+                    <legend class="h6 text-circuit">Personal Details</legend>
+                    <div class="row g-3">
+
+                      <div class="col-md-6">
+                        <label for="firstName" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="example: Kerry-Ann">
+                      </div>
+
+                      <div class="col-md-6">
+                        <label for="lastName" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="example: Smith">
+                      </div>
+
+                      <div class="col-md-6">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="example: ksmith@gmail.com">
+                      </div>
+
+                       <div class="col-md-6">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="example: 876-566-1234">
+                      </div>
+
+                      <div class="col-12">
+                        <label for="deviceType" class="form-label">Main Device</label>
+                        <select class="form-select" id="deviceType">
+                          <option value=""> Choose your device </option>
+                          <option value="Laptop">Laptop</option>
+                          <option value="Desktop">Desktop</option>
+                          <option value="Gaming PC">Gaming PC</option>
+                          <option value="Other">Other</option>
+                        </select>
+                      </div>
+                    </div>
+                   </fieldset>
+
+                  <!-- Account Details -->
+                   <fieldset class="mb-3">
+                    <legend class="h6 text-circuit">Account Details</legend>
+                    <div class="row g-3">
+
+                      <div class="col-md-6">
+                        <label for="regPassword" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="regPassword" placeholder="Create a password">
+                      </div>
+
+                      <div class="col-md-6">
+                        <label for="confirmPassword" class="form-label">Confirm Password</label>
+                        <input type="password" class="form-control" id="confirmPassword" placeholder="Type it again">
+                      </div>
+
+                    </div>
+                   </fieldset>
+
+                  <!-- Terms and Register Button -->
+                  <div class="form-check mb-4">
+                    <input type="checkbox" class="form-check-input" id="terms">
+                    <label for="terms" class="form-check-label">I agree to the terms and conditions</label>
+                  </div>
+                  
+                  <button type="submit" class="btn btn-circuit w-100">Register</button>
+                 </form>
+
+                 <p class="text-center mt-3 mb-0">Already have an account? <a href="login.html">Login Here</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
   </main>
 
   <!-- FOOTER -->
