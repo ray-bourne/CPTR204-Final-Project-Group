@@ -58,8 +58,13 @@ function updateCartList(){
     // Go through every product in the cart
     for (const name in cart){
         if (cart[name] > 0){
-            list.innerHTML += '<li class="list-group-item d-flex justify-content-between">' +
-                name + '<span class="badge text-bg-dark">x ' + cart[name] + '</span></li>';
+            list.innerHTML += '<li class="list-group-item d-flex justify-content-between align-items-center">' +
+                name +
+                '<span>' +
+                '<button type="button" class="btn btn-outline-danger btn-sm" onclick="removeFromCart(\'' + name + '\')">−</button>' +
+                '<span class="badge text-bg-dark mx-2">x ' + cart[name] + '</span>' +
+                '<button type="button" class="btn btn-outline-success btn-sm" onclick="addToCart(\'' + name + '\')">+</button>' +
+                '</span></li>';
         }
     }
 
