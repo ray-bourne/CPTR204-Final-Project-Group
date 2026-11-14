@@ -99,7 +99,7 @@
                 <h3 class="h5 card-title">Kingston 1TB NVMe SSD</h3>
                 <p class="card-text">Up to 10x faster than a hard drive. Great for laptops and desktops.</p>
                 <p class="h5 text-circuit">$11,500</p>
-                <button type="button" class="btn btn-circuit" onclick="addToCart('Kingston 1TB NVMe SSD')">Add to Cart</button>
+                <button type="button" class="btn btn-circuit" onclick="addToCart('Kingston 1TB NVMe SSD', 11500)">Add to Cart</button>
                 <button type="button" class="btn btn-outline-danger" onclick="removeFromCart('Kingston 1TB NVMe SSD')">−</button>
               </div>
             </div>
@@ -114,7 +114,7 @@
                 <h3 class="h5 card-title">Corsair 16GB DDR4 RAM</h3>
                 <p class="card-text">2 x 8GB kit, 3200MHz. Run more apps and games at the same time.</p>
                 <p class="h5 text-circuit">$7,800</p>
-                <button type="button" class="btn btn-circuit" onclick="addToCart('Corsair 16GB DDR4 RAM')">Add to Cart</button>
+                <button type="button" class="btn btn-circuit" onclick="addToCart('Corsair 16GB DDR4 RAM', 7800)">Add to Cart</button>
                 <button type="button" class="btn btn-outline-danger" onclick="removeFromCart('Corsair 16GB DDR4 RAM')">−</button>
               </div>
             </div>
@@ -129,7 +129,7 @@
                 <h3 class="h5 card-title">GeForce RTX 4060 8GB</h3>
                 <p class="card-text">Smooth 1080p gaming and fast video editing.</p>
                 <p class="h5 text-circuit">$52,000</p>
-                <button type="button" class="btn btn-circuit" onclick="addToCart('GeForce RTX 4060 8GB')">Add to Cart</button>
+                <button type="button" class="btn btn-circuit" onclick="addToCart('GeForce RTX 4060 8GB', 52000)">Add to Cart</button>
                 <button type="button" class="btn btn-outline-danger" onclick="removeFromCart('GeForce RTX 4060 8GB')">−</button>
               </div>
             </div>
@@ -144,7 +144,7 @@
                 <h3 class="h5 card-title">650W 80+ Gold Power Supply</h3>
                 <p class="card-text">Reliable, efficient power for gaming PCs and workstations.</p>
                 <p class="h5 text-circuit">$14,500</p>
-                <button type="button" class="btn btn-circuit" onclick="addToCart('650W 80+ Gold Power Supply')">Add to Cart</button>
+                <button type="button" class="btn btn-circuit" onclick="addToCart('650W 80+ Gold Power Supply', 14500)">Add to Cart</button>
                 <button type="button" class="btn btn-outline-danger" onclick="removeFromCart('650W 80+ Gold Power Supply')">−</button>
               </div>
             </div>
@@ -159,7 +159,7 @@
                 <h3 class="h5 card-title">Universal Laptop Charger</h3>
                 <p class="card-text">90W charger with 8 tips. Works with most laptop brands.</p>
                 <p class="h5 text-circuit">$4,500</p>
-                <button type="button" class="btn btn-circuit" onclick="addToCart('Universal Laptop Charger')">Add to Cart</button>
+                <button type="button" class="btn btn-circuit" onclick="addToCart('Universal Laptop Charger', 4500)">Add to Cart</button>
                 <button type="button" class="btn btn-outline-danger" onclick="removeFromCart('Universal Laptop Charger')">−</button>
               </div>
             </div>
@@ -174,7 +174,7 @@
                 <h3 class="h5 card-title">Wireless Keyboard &amp; Mouse</h3>
                 <p class="card-text">Quiet keys, long battery life and one USB receiver for both.</p>
                 <p class="h5 text-circuit">$6,200</p>
-                <button type="button" class="btn btn-circuit" onclick="addToCart('Wireless Keyboard and Mouse')">Add to Cart</button>
+                <button type="button" class="btn btn-circuit" onclick="addToCart('Wireless Keyboard and Mouse', 6200)">Add to Cart</button>
                 <button type="button" class="btn btn-outline-danger" onclick="removeFromCart('Wireless Keyboard and Mouse')">−</button>
               </div>
             </div>
@@ -236,6 +236,9 @@
 
   <!-- BOOTSTRAP JAVASCRIPT -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Shared Code: Accounts, Cart and Navbar (Every Page) -->
+  <script src="js/store.js"></script>
 
   <!-- OUR JAVASCRIPT FOR THIS PAGE -->
   <script src="js/parts.js"></script>

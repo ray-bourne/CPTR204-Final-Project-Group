@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel | Circuit-Care Island Tech</title>
+
+  <!-- BOOTSTRAP CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- GOOGLE FONTS (Poppins for headings, Open Sans for text) -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- OUR OWN CSS (EXTERNAL) -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER + NAVBAR -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-circuit">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+          <img src="images/logo.svg" alt="Circuit-Care Island Tech logo" width="40" height="40">
+          Circuit-Care Island Tech
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="parts.html">Parts Shop</a></li>
+            <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+          </ul>
+          <div class="d-flex gap-2 ms-lg-3 mt-2 mt-lg-0">
+            <a class="btn btn-outline-light" href="login.html">Login</a>
+            <a class="btn btn-circuit" href="register.html">Register</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Page Banner -->
+    <section class="page-banner">
+      <div class="container">
+        <h1>Admin Panel</h1>
+        <p class="lead mb-0">Registered customers and orders placed on the website.</p>
+      </div>
+    </section>
+
+    <!-- Admin Area -->
+    <section class="py-5" id="adminArea">
+      <div class="container">
+
+        <!-- Summary Cards -->
+        <div class="row g-4 mb-5 text-center">
+
+          <div class="col-md-4">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body">
+                <p class="text-muted mb-1">Registered Customers</p>
+                <p class="display-6 fw-bold text-circuit mb-0" id="customerCount">0</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body">
+                <p class="text-muted mb-1">Orders Placed</p>
+                <p class="display-6 fw-bold text-circuit mb-0" id="orderCount">0</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body">
+                <p class="text-muted mb-1">Total Sales</p>
+                <p class="display-6 fw-bold text-circuit mb-0" id="salesTotal">$0</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Customers Table -->
+        <h2 class="h4 mb-3">Registered Customers</h2>
+        <div class="table-responsive mb-5">
+          <table class="table table-striped table-hover">
+            <thead class="table-dark">
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Main Device</th>
+              </tr>
+            </thead>
+
+            <tbody id="customerRows"></tbody>
+          </table>
+        </div>
+
+        <!-- Orders Table -->
+        <h2 class="h4 mb-3">Orders</h2>
+        <div class="table-responsive mb-4">
+          <table class="table table-striped table-hover">
+            <thead class="table-dark">
+              <tr>
+                <th>Order #</th>
+                <th>Customer</th>
+                <th>Items</th>
+                <th>Delivery</th>
+                <th>Payment</th>
+                <th>Total</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+
+            <tbody id="orderRows"></tbody>
+          </table>
+        </div>
+
+        <!-- Reset Button (For Testing Before the Demo) -->
+        <button type="button" class="btn btn-outline-danger" onclick="clearDemoData()">Clear all customers and orders</button>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-circuit text-white pt-5 pb-3">
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- FOOTER: ABOUT THE STORE -->
+        <div class="col-md-4">
+          <h2 class="h5 text-circuit">Circuit-Care Island Tech</h2>
+          <p class="footer-text">Computer hardware sales and repairs you can trust, proudly serving St. Elizabeth and all of Jamaica.</p>
+          <p class="footer-text mb-0">Main Street, Santa Cruz, St. Elizabeth<br>(876) 555-0142<br>hello@circuitcareisland.com</p>
+        </div>
+
+        <!-- FOOTER: QUICK LINKS -->
+        <div class="col-6 col-md-2">
+          <h2 class="h5">Quick Links</h2>
+          <ul class="list-unstyled">
+            <li><a class="footer-link" href="index.html">Home</a></li>
+            <li><a class="footer-link" href="about.html">About Us</a></li>
+            <li><a class="footer-link" href="services.html">Services</a></li>
+            <li><a class="footer-link" href="parts.html">Parts Shop</a></li>
+            <li><a class="footer-link" href="faq.html">FAQ</a></li>
+            <li><a class="footer-link" href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        
+        <!-- FOOTER: FOLLOW US (EXTERNAL LINKS - OPEN IN A NEW TAB) -->
+        <div class="col-6 col-md-3">
+          <h2 class="h5">Follow Us</h2>
+          <ul class="list-unstyled">
+            <li><a class="footer-link" href="https://www.facebook.com" target="_blank" rel="noopener">Facebook</a></li>
+            <li><a class="footer-link" href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a class="footer-link" href="https://www.youtube.com" target="_blank" rel="noopener">YouTube</a></li>
+          </ul>
+        </div>
+
+        <!-- FOOTER: BRANDS WE TRUST (EXTERNAL LINKS - OPEN IN A NEW TAB) -->
+        <div class="col-md-3">
+          <h2 class="h5">Brands We Trust</h2>
+          <ul class="list-unstyled">
+            <li><a class="footer-link" href="https://www.intel.com" target="_blank" rel="noopener">Intel</a></li>
+            <li><a class="footer-link" href="https://www.amd.com" target="_blank" rel="noopener">AMD</a></li>
+            <li><a class="footer-link" href="https://www.kingston.com" target="_blank" rel="noopener">Kingston</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-secondary">
+      <p class="text-center footer-text small mb-0">&copy; 2026 Circuit-Care Island Tech. All rights reserved. | CPTR204 Final Project</p>
+    </div>
+  </footer>
+
+  <!-- BOOTSTRAP JAVASCRIPT -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Shared Code: Accounts, Cart and Navbar (Every Page) -->
+  <script src="js/store.js"></script>
+
+  <!-- OUR JAVASCRIPT FOR THIS PAGE -->
+  <script src="js/admin.js"></script>
+</body>
+</html>

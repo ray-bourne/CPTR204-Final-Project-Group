@@ -5,25 +5,48 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
     event.preventDefault();
 
     // Gets what user typed
-    const username = document.getElementById("username").value;
+    const username = document.getElementById("username").value.toLowerCase();
     const password = document.getElementById("password").value;
+    const rememberMe = document.getElementById("rememberMe").checked;
     const message = document.getElementById("loginMessage");
 
-    // Empty field check (Validation 1)
+    // Looks for a registered customer with this email and password (from store.js)
+    const customer = getUsers().find(function (user) {
+        return user.email === username && user.password === password;
+    });
+
+    // Empty Field Check (Validation 1)
     if (username === "" || password === ""){
         message.className = "alert alert-danger";
-        message.textContent = "Please enter both your username and password";
+        message.textContent = "Please enter both your email and password";
     }
 
-    // Correct Log in check (Validation 2)
+    // Admin Log in Check (Validation 2) - goes to the Admin Panel
     else if(username === "islandtech" && password === "Repair876"){
-        alert("Log in successful! Welcome back to Circuit-Care Island Tech");
-        window.location.href = "services.html";
+        setCurrentUser({ name: "Admin", email: "islandtech", role: "admin" }, rememberMe);
+        alert("Log in successful! Welcome, Admin");
+        window.location.href = "admin.html";
     }
 
-    // Wrong Username or Password
+    // Customer Log in Check (Validation 3) - an account made on the Register page
+    else if(customer !== undefined){
+        setCurrentUser({ name: customer.firstName, email: customer.email, role: "customer" }, rememberMe);
+        alert("Log in successful! Welcome back, " + customer.firstName);
+
+        // Came from Checkout? Go back there, otherwise go to Services
+        const goBackTo = localStorage.getItem("ccAfterLogin");
+        localStorage.removeItem("ccAfterLogin");
+        if (goBackTo !== null) {
+            window.location.href = goBackTo;
+        }
+        else {
+            window.location.href = "services.html";
+        }
+    }
+
+    // Wrong Email or Password
     else {
         message.className = "alert alert-danger";
-        message.textContent = "Log in failed. Please check your username and password";
+        message.textContent = "Log in failed. Please check your email and password";
     }
 });
