@@ -1,4 +1,3 @@
-// Shared Code (Linked on Every Page)
 // Saves accounts, the logged in user, the cart and orders in the browser
 // with localStorage, and changes the navbar when someone is logged in
 
