@@ -1,4 +1,4 @@
-/* FONTS */
+/* Fonts */
 body {
   font-family: "Open Sans", sans-serif;
 }
@@ -8,7 +8,7 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
   font-weight: 600;
 }
 
-/* BRAND COLOURS */
+/* Brand Colours */
 .bg-circuit {
   background-color: #0a2540;   
 }
@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
   background-color: #f4f7fa;   
 }
 
-/* BUTTON */
+/* Button */
 .btn-circuit {
   background-color: #00b37e;
   border-color: #00b37e;
@@ -34,8 +34,7 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
   color: #ffffff;
 }
 
-/* NAVBAR */
-/* MEDIA QUERY: smaller store name on phones so the menu button fits */
+/* Navbar */
 @media (max-width: 575px) {
   .navbar-brand {
     font-size: 1rem;
@@ -51,7 +50,7 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
   color: #00b37e;              
 }
 
-/* PAGE BANNER */
+/* Page Banner */
 .page-banner {
   background-color: #0a2540;
   color: #ffffff;
@@ -68,7 +67,7 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
   color: #c8d3df;
 }
 
-/* CARD HOVER  */
+/* Card Hover  */
 .card-hover {
   transition: transform 0.3s;
 }
@@ -77,7 +76,7 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
   transform: translateY(-6px);
 }
 
-/* FOOTER */
+/* Footer */
 footer {
   border-top: 5px solid #00b37e;
 }
